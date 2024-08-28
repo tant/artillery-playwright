@@ -2,7 +2,6 @@
 
 AutoPerformTest: Automated Performance Testing Suite
 
-
 ## Description
 
 This project serves as a boilerplate for automation and performance testing for common projects.
@@ -26,7 +25,11 @@ You can run it or better use Visual Code with Playwright extension to run and ma
 
 ## Installation
 git clone https://github.com/tant/artillery-playwright.git
+
+
 cd artillery-playwright
+
+
 npm install
 
 
