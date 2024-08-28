@@ -1,0 +1,16 @@
+config:
+  target: https://www.artillery.io
+  tls:
+    rejectUnauthorized: false
+  engines:
+    playwright: 
+      launchOptions: 
+        ignoreHTTPSErrors: true
+        headless: false
+      launchPersistentContext:
+        ignoreHTTPSErrors: true
+      contextOptions: {}
+  processor: './perf/flows.ts'
+scenarios:
+  - engine: playwright
+    testFunction: 'helloFlow'
